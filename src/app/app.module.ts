@@ -8,6 +8,10 @@ import { ievnComponent } from './ievn/ievn.components';
 import { IricComponent } from './escuela/iric/iric.component';
 import { MenuComponent } from './escuela/menu/menu.component';
 import { FormsModule } from '@angular/forms';
+import { SumarComponent } from './escuela/formularios/sumar/sumar.component';
+import { OperasBasComponent } from './escuela/formularios/operas-bas/operas-bas.component';
+import { OperasModule } from './escuela/formularios/operas/operas.module';
+
 
 //aqui agregamos nuestras referencias a otros htmls
 @NgModule({
@@ -16,11 +20,13 @@ import { FormsModule } from '@angular/forms';
     escuelaComponent,
     ievnComponent,
     IricComponent,
-    MenuComponent
+    MenuComponent,
+    SumarComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    OperasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
