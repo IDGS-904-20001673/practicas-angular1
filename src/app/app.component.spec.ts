@@ -12,16 +12,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'intro-angular-idgs904'`, () => {
+  it(`should have as title 'practicas-angular'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('intro-angular-idgs904');
+    expect(app.title).toEqual('practicas-angular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('intro-angular-idgs904 app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('practicas-angular app is running!');
   });
 });

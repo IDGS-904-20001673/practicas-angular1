@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "intro-angular-idgs904": {
+    "practicas-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/intro-angular-idgs904",
+            "outputPath": "dist/practicas-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "intro-angular-idgs904:build:production"
+              "browserTarget": "practicas-angular:build:production"
             },
             "development": {
-              "browserTarget": "intro-angular-idgs904:build:development"
+              "browserTarget": "practicas-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "intro-angular-idgs904:build"
+            "browserTarget": "practicas-angular:build"
           }
         },
         "test": {
@@ -102,6 +102,6 @@
     }
   },
   "cli": {
-    "analytics": "a4583146-d99b-4780-a034-1faa0ed81560"
+    "analytics": "4d228e97-42a9-4b78-ad82-c3aca19198c3"
   }
 }

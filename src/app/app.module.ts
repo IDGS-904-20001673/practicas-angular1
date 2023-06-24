@@ -1,32 +1,24 @@
-//aqui van las librerias que se trabajan en el proyecto
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
-import { escuelaComponent } from './escuela/escuela.component';
-import { ievnComponent } from './ievn/ievn.components';
-import { IricComponent } from './escuela/iric/iric.component';
-import { MenuComponent } from './escuela/menu/menu.component';
 import { FormsModule } from '@angular/forms';
-import { SumarComponent } from './escuela/formularios/sumar/sumar.component';
-import { OperasBasComponent } from './escuela/formularios/operas-bas/operas-bas.component';
-import { OperasModule } from './escuela/formularios/operas/operas.module';
+import { AppComponent } from './app.component';
+import { MenuComponent } from './formularios/menu/menu.component';
+import { ResistenciasModule } from './formularios/resistencias/resistencias.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DospuntosModule } from './formularios/dospuntos/dospuntos.module';
 
 
-//aqui agregamos nuestras referencias a otros htmls
 @NgModule({
   declarations: [
     AppComponent,
-    escuelaComponent,
-    ievnComponent,
-    IricComponent,
-    MenuComponent,
-    SumarComponent
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    OperasModule
+    ResistenciasModule,
+    BrowserAnimationsModule,
+    DospuntosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
