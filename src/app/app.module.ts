@@ -8,14 +8,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DospuntosModule } from './formularios/dospuntos/dospuntos.module';
 import { CineModule } from './formularios/cine/cine.module';
 import { AppRoutingModule } from './app.routing.module';
-import { PizzasComponent } from './formularios/pizzas/pizzas.component';
-
+import { PizzasModule } from './formularios/pizzas/pizzas.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
-    PizzasComponent
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +23,7 @@ import { PizzasComponent } from './formularios/pizzas/pizzas.component';
     DospuntosModule, 
     CineModule,
     AppRoutingModule,
+    PizzasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
